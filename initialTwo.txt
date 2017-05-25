@@ -1,0 +1,46 @@
+Inodes: 32
+Blocks: 128
+Block group:
+    block bitmap: 3
+    inode bitmap: 4
+    inode table: 5
+    free blocks: 101
+    free inodes: 17
+    used_dirs: 4
+Block bitmap: 11111111 11111111 11111110 00000000 00010000 10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000011
+Inode bitmap: 11111111 11111001 10000000 00000000
+
+Inodes:
+[2] type: d size: 1024 links: 4 blocks: 2
+[2] Blocks:  9
+Inodes:
+[12] type: d size: 1024 links: 3 blocks: 2
+[12] Blocks:  127
+Inodes:
+[13] type: d size: 1024 links: 2 blocks: 2
+[13] Blocks:  23
+Inodes:
+[16] type: f size: 38 links: 1 blocks: 2
+[16] Blocks:  41
+Inodes:
+[17] type: f size: 33 links: 1 blocks: 2
+[17] Blocks:  36
+
+Directory Blocks:
+   DIR BLOCK NUM: 9 (for inode 2)
+Inode: 2 rec_len: 12 name_len: 1 type= d name=.
+Inode: 2 rec_len: 12 name_len: 2 type= d name=..
+Inode: 11 rec_len: 20 name_len: 10 type= d name=lost+found
+Inode: 12 rec_len: 36 name_len: 6 type= d name=level1
+Inode: 17 rec_len: 944 name_len: 5 type= f name=afile
+   DIR BLOCK NUM: 127 (for inode 12)
+Inode: 12 rec_len: 12 name_len: 1 type= d name=.
+Inode: 2 rec_len: 12 name_len: 2 type= d name=..
+Inode: 13 rec_len: 1000 name_len: 6 type= d name=level2
+   DIR BLOCK NUM: 23 (for inode 13)
+Inode: 13 rec_len: 12 name_len: 1 type= d name=.
+Inode: 12 rec_len: 32 name_len: 2 type= d name=..
+Inode: 16 rec_len: 980 name_len: 5 type= f name=bfile
+
+2
+8
